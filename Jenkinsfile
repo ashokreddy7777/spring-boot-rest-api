@@ -35,7 +35,7 @@ pipeline {
             }
             */
             steps {
-                runSonar("/target/coverage-reports/jacoco-unit.exec")
+                runSonar("/var/lib/jenkins/workspace/Test/Test-mvnSonar/target/coverage-reports/jacoco-unit.exec")
             }
         }
         /*stage('cleanup') {
