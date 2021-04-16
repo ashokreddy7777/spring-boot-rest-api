@@ -35,7 +35,7 @@ pipeline {
             }
             */
             steps {
-                runSonar("/target/classes/coverage-reports/.*")
+                runSonar("/target/coverage-reports/jacoco-unit.exec")
             }
         }
         /*stage('cleanup') {
